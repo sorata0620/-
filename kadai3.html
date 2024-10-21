@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ケーキのレイアウト</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 80vw;
+            height: 80vh;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>「課題」ケーキのレイアウト</h1>
+    <div class="gallery">
+    <img src="cake01.jpg" alt="ケーキ01">
+    <img src="cake02.jpg" alt="ケーキ02">
+    <img src="cake03.jpg" alt="ケーキ03">
+    <img src="cake04.jpg" alt="ケーキ04">
+</div>
+</body>
+</html>
